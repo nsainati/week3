@@ -1,0 +1,19 @@
+<body bgcolor="green"> 
+
+<h1><font size="50" face="Georgia" color="white">Poker</font></h1>
+
+<hr color="black">
+
+<form><input type=button color="blue" value="Deal a new hand!" onClick="window.location.reload()"></form>
+
+<ul>
+ <% @hand.each do |c| %>
+	<img src=<%= c.image.to_s %> width="200">
+<% end %>
+</ul>
+
+
+
+
+
+
